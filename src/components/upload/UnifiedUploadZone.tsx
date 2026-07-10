@@ -4,7 +4,7 @@ import { useDropzone } from 'react-dropzone';
 import { AlertCircle, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { MAX_FILE_SIZE, ACCEPTED_FILE_TYPES } from '@/lib/constants';
-import type { TabValue } from '@/components/ui/TabSwitcher';
+import type { TabValue } from '@/components/ui/AppTabSwitcher';
 
 interface UnifiedUploadZoneProps {
   activeTab: TabValue;

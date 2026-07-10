@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Download, Check } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/AppButton';
 import { useUpscale } from '@/context/UpscaleContext';
 import { downloadImage } from '@/lib/api';
 

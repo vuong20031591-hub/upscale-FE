@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { RefreshCw } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/AppButton';
 import { ComparisonSlider } from './ComparisonSlider';
 import { ImageMetadata } from './ImageMetadata';
 import { DownloadButton } from './DownloadButton';

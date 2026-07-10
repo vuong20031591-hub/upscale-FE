@@ -3,8 +3,8 @@ import React from 'react';
 // next/image replaced with native img
 import { ImageIcon, Clock, Users, Zap, AlertTriangle } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Spinner } from '@/components/ui/Spinner';
-import { SkeletonImage, Skeleton } from '@/components/ui/Skeleton';
+import { Spinner } from '@/components/ui/AppSpinner';
+import { SkeletonImage, Skeleton } from '@/components/ui/AppSkeleton';
 import type { FaceEnhancementMetadata } from '@/types/face-enhancement';
 
 /**
@@ -86,10 +86,7 @@ export function FaceEnhancementPreview({
               <img
                 src={originalImage}
                 alt="Original image"
-                fill
                 className="object-contain"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
               />
             ) : (
               <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
@@ -131,10 +128,7 @@ export function FaceEnhancementPreview({
               <img
                 src={enhancedImage}
                 alt="Enhanced image"
-                fill
                 className="object-contain"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
               />
             ) : (
               // Empty state

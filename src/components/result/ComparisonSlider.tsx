@@ -45,10 +45,7 @@ export function ComparisonSlider() {
         <img
           src={preview}
           alt="Original image"
-          fill
           className="object-contain"
-          sizes="(max-width: 768px) 100vw, 80vw"
-          priority
           draggable={false}
         />
 
@@ -60,10 +57,7 @@ export function ComparisonSlider() {
           <img
             src={result.imageUrl}
             alt="Upscaled image"
-            fill
             className="object-contain"
-            sizes="(max-width: 768px) 100vw, 80vw"
-            priority
             draggable={false}
           />
         </div>

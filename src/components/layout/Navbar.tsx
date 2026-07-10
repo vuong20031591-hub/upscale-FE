@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 // next/link replaced with anchor
 import { Sparkles, Upload, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { ThemeToggle } from '@/components/ui/ThemeToggle';
+import { ThemeToggle } from '@/components/ui/AppThemeToggle';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

@@ -32,7 +32,6 @@ export function StreamingPreview({
       <img
         src={originalImage}
         alt="Processing preview"
-        fill
         className={cn(
           "object-contain transition-all duration-500",
           status === 'processing' && "animate-pulse"
@@ -40,8 +39,6 @@ export function StreamingPreview({
         style={{
           filter: `blur(${blurAmount}px)`,
         }}
-        sizes="(max-width: 768px) 100vw, 80vw"
-        priority
       />
 
       {/* Overlay với progress info */}

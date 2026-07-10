@@ -4,16 +4,16 @@
  * Exports all reusable UI components.
  */
 
-export { Button } from './Button';
-export { Card } from './Card';
-export { ProgressBar } from './ProgressBar';
-export { Spinner } from './Spinner';
-export { ThemeToggle } from './ThemeToggle';
-export { TabSwitcher } from './TabSwitcher';
-export type { TabValue } from './TabSwitcher';
+export { Button } from './AppButton';
+export { Card } from './AppCard';
+export { ProgressBar } from './AppProgressBar';
+export { Spinner } from './AppSpinner';
+export { ThemeToggle } from './AppThemeToggle';
+export { TabSwitcher } from './AppTabSwitcher';
+export type { TabValue } from './AppTabSwitcher';
 export { 
   Skeleton, 
   SkeletonImage, 
   SkeletonText, 
   SkeletonCard 
-} from './Skeleton';
+} from './AppSkeleton';

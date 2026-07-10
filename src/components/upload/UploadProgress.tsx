@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { useUpscale } from '@/context/UpscaleContext';
-import { ProgressBar } from '@/components/ui/ProgressBar';
-import { Spinner } from '@/components/ui/Spinner';
+import { ProgressBar } from '@/components/ui/AppProgressBar';
+import { Spinner } from '@/components/ui/AppSpinner';
 import { StreamingPreview } from './StreamingPreview';
 
 export function UploadProgress() {

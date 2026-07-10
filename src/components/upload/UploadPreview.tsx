@@ -4,7 +4,7 @@ import React from 'react';
 import { X, ImageIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useUpscale } from '@/context/UpscaleContext';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/AppButton';
 
 export function UploadPreview() {
   const { preview, file, setFile, status } = useUpscale();
@@ -32,13 +32,10 @@ export function UploadPreview() {
       <img
         src={preview}
         alt={file?.name || 'Preview'}
-        fill
         className={cn(
           'object-contain transition-opacity duration-300',
           isProcessing && 'opacity-50'
         )}
-        sizes="(max-width: 768px) 100vw, 50vw"
-        priority
       />
 
       {/* Remove button */}

@@ -203,11 +203,7 @@ export function ImageLightbox({
             <img
               src={originalImageUrl}
               alt="Original image"
-              fill
               className="object-contain"
-              sizes="95vw"
-              quality={100}
-              priority
               draggable={false}
             />
 
@@ -219,11 +215,7 @@ export function ImageLightbox({
               <img
                 src={upscaledImageUrl}
                 alt="Upscaled image"
-                fill
                 className="object-contain"
-                sizes="95vw"
-                quality={100}
-                priority
                 draggable={false}
               />
             </div>

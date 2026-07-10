@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { AlertCircle, Sparkles, Users, Clock, Zap } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/AppButton';
 import { FaceModeSelector } from './FaceModeSelector';
 import { UnifiedResultView } from '@/components/result/UnifiedResultView';
 import { useFaceEnhancement } from '@/context/FaceEnhancementContext';

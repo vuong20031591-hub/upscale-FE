@@ -9,7 +9,7 @@ import { UnifiedUploadZone } from '@/components/upload/UnifiedUploadZone';
 import { UploadProgress } from '@/components/upload/UploadProgress';
 import { ResultView } from '@/components/result/ResultView';
 import { FaceEnhancementSection } from '@/components/FaceEnhancement/FaceEnhancementSection';
-import { TabSwitcher, TabValue } from '@/components/ui/TabSwitcher';
+import { TabSwitcher, TabValue } from '@/components/ui/AppTabSwitcher';
 import { ToastContainer } from '@/components/feedback/ToastContainer';
 import { cn } from '@/lib/utils';
 
