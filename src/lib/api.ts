@@ -1,10 +1,16 @@
 import { API_ENDPOINTS } from './constants';
+import { getAccessToken } from './auth-token';
 import type { UpscaleConfig, UpscaleResult, ApiError } from '@/types';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 function getApiUrl(endpoint: string): string {
   return `${API_BASE_URL}${endpoint}`;
+}
+
+function authHeader(): Record<string, string> {
+  const token = getAccessToken();
+  return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
 // Health check
@@ -123,6 +129,8 @@ export function upscaleImage(
 
     // Send request
     xhr.open('POST', getApiUrl(endpoint));
+    const token = getAccessToken();
+    if (token) xhr.setRequestHeader('Authorization', `Bearer ${token}`);
     xhr.send(formData);
   });
 }
