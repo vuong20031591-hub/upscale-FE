@@ -14,7 +14,7 @@ import type {
   FaceEnhancementMetadata 
 } from '@/types/face-enhancement';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 /**
  * Lấy URL đầy đủ cho API endpoint

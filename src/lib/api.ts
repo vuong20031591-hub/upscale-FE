@@ -1,7 +1,7 @@
 import { API_ENDPOINTS } from './constants';
 import type { UpscaleConfig, UpscaleResult, ApiError } from '@/types';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 function getApiUrl(endpoint: string): string {
   return `${API_BASE_URL}${endpoint}`;
