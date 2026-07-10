@@ -8,10 +8,6 @@ function getApiUrl(endpoint: string): string {
   return `${API_BASE_URL}${endpoint}`;
 }
 
-function authHeader(): Record<string, string> {
-  const token = getAccessToken();
-  return token ? { Authorization: `Bearer ${token}` } : {};
-}
 
 // Health check
 export async function checkHealth(): Promise<{ ready: boolean }> {
