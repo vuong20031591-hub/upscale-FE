@@ -45,7 +45,7 @@ export function useStreamingUpload() {
       // Create abort controller
       abortControllerRef.current = new AbortController();
 
-      const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+      const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
       // ⚡ Smart Auto-Detection: Direct upload without streaming
       if (config.method === 'smart') {
