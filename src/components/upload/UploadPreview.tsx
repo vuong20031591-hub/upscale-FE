@@ -29,7 +29,7 @@ export function UploadPreview() {
   return (
     <div className="relative w-full aspect-video max-h-[400px] rounded-xl overflow-hidden bg-slate-900 group">
       {/* Image preview */}
-      <Image
+      <img
         src={preview}
         alt={file?.name || 'Preview'}
         fill

@@ -200,7 +200,7 @@ export function ImageLightbox({
             aria-valuetext={`${Math.round(position)}% showing enhanced image`}
           >
             {/* Before image (original) - full width */}
-            <Image
+            <img
               src={originalImageUrl}
               alt="Original image"
               fill
@@ -216,7 +216,7 @@ export function ImageLightbox({
               className="absolute inset-0"
               style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
             >
-              <Image
+              <img
                 src={upscaledImageUrl}
                 alt="Upscaled image"
                 fill

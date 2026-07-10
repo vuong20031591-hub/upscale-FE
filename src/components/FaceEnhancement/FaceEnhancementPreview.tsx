@@ -83,7 +83,7 @@ export function FaceEnhancementPreview({
           
           <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-slate-300 dark:hover:border-slate-600 hover:shadow-md">
             {originalImage ? (
-              <Image
+              <img
                 src={originalImage}
                 alt="Original image"
                 fill
@@ -128,7 +128,7 @@ export function FaceEnhancementPreview({
               </div>
             ) : enhancedImage ? (
               // Enhanced image result
-              <Image
+              <img
                 src={enhancedImage}
                 alt="Enhanced image"
                 fill

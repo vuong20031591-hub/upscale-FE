@@ -29,7 +29,7 @@ export function StreamingPreview({
   return (
     <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-slate-900">
       {/* Original image với blur effect */}
-      <Image
+      <img
         src={originalImage}
         alt="Processing preview"
         fill

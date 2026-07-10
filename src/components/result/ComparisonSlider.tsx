@@ -42,7 +42,7 @@ export function ComparisonSlider() {
         aria-valuetext={`${Math.round(position)}% showing enhanced image`}
       >
         {/* Before image (original) - full width */}
-        <Image
+        <img
           src={preview}
           alt="Original image"
           fill
@@ -57,7 +57,7 @@ export function ComparisonSlider() {
           className="absolute inset-0"
           style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
         >
-          <Image
+          <img
             src={result.imageUrl}
             alt="Upscaled image"
             fill
