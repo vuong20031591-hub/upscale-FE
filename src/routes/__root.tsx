@@ -8,11 +8,10 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
-import { AuthProvider } from "react-oidc-context";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { cognitoAuthConfig } from "../lib/auth-config";
+import { AuthClientProvider } from "../components/AuthClientProvider";
 
 function NotFoundComponent() {
   return (
@@ -121,11 +120,11 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
-    <AuthProvider {...cognitoAuthConfig}>
+    <AuthClientProvider>
       <QueryClientProvider client={queryClient}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
       </QueryClientProvider>
-    </AuthProvider>
+    </AuthClientProvider>
   );
 }
