@@ -80,7 +80,7 @@ export function Navbar() {
                 
                 if (isInternal) {
                   return (
-                    <Link
+                    <a
                       key={link.label}
                       href={link.href}
                       className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary-400 transition-colors"
@@ -137,7 +137,7 @@ export function Navbar() {
                 
                 if (isInternal) {
                   return (
-                    <Link
+                    <a
                       key={link.label}
                       href={link.href}
                       onClick={() => setMobileMenuOpen(false)}
