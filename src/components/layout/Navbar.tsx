@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Sparkles, Upload, Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { ThemeToggle } from '@/components/ui/AppThemeToggle';
+import { AuthButton } from '@/components/AuthButton';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -108,6 +109,10 @@ export function Navbar() {
             <div className="flex items-center gap-4">
               {/* Theme Toggle */}
               <ThemeToggle />
+
+              {/* Auth */}
+              <AuthButton />
+
 
               {/* Mobile Menu Button */}
               <button
