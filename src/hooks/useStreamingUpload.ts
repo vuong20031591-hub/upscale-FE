@@ -57,7 +57,7 @@ export function useStreamingUpload() {
         formData.append('file', file);
         
         // ⚡ Truyền bg_upscale từ resolution option (2X hoặc 4X)
-        const bgUpscale = config.resolution === '4X' ? 4 : 2;
+        const bgUpscale = config.resolution === '4k' ? 4 : 2;
         formData.append('bg_upscale', bgUpscale.toString());
 
         const response = await fetch(`${API_BASE}/upscale/smart`, {
